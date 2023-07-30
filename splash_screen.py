@@ -4,6 +4,7 @@ import time
 
 from customtkinter import *
 from PIL import Image,ImageTk
+from switch_test import main
 
 
 root=Tk()
@@ -14,6 +15,7 @@ height=400
 x=(root.winfo_screenwidth()/2)-(width/2)
 y=(root.winfo_screenheight()/2)-(height/2)
 root.geometry(f"{width}x{height}+{int(x)}+{int(y)}")
+root.resizable(width=FALSE,height=FALSE)
 
 
 def new_win():
@@ -44,51 +46,54 @@ def new_win():
                          font=("Poppins", 16), text_color="#ffffff")
 
     subHeader.place(x=50, y=88)
+    def goToMain():
+        root.destroy()
+        main()
 
     startButton = CTkButton(master=w_Frame, text="Get Started", fg_color="#00A36C", width=160, height=50,
-                            font=("Poppins", 16), hover_color="#00A36C")
+                            font=("Poppins", 16), hover_color="#00A36C",command=goToMain)
     startButton.place(x=170, y=166)
 
     root.mainloop()
 
 
 Frame(root,width=800,height=600,bg="#181818").place(x=0,y=0)
-l=Label(root,text="iMAGE",bg='#181818',fg="#06D37D",font=("Poppins",50))
-l.place(x=200,y=70)
+l=Label(root,text="I-Mage",bg='#181818',fg="#06D37D",font=("Poppins",50,"bold"))
+l.place(x=170,y=80)
 
 
-loading=Label(root,text="loading...",bg='#181818',fg="white",font=("Poppins", 18))
-loading.place(x=24,y=320)
+loading=Label(root,text="loading...",bg='#181818',fg="white",font=("Poppins", 16))
+loading.place(x=20,y=350)
 
 image_a=ImageTk.PhotoImage(Image.open("c1.png"),size=(130,130))
 image_b=ImageTk.PhotoImage(Image.open("c2.png"),size=(130,130))
 
 for i in range(2):
-    i1=Label(root,text="",image=image_a,bg="#181818").place(x=240,y=160)
-    i2 =Label(root, text="", image=image_b,bg="#181818").place(x=270, y=160)
-    i3 = Label(root, text="", image=image_b,bg="#181818").place(x=300, y=160)
-    i4 = Label(root, text="", image=image_b,bg="#181818").place(x=330, y=160)
+    i1=Label(root,text="",image=image_a,bg="#181818").place(x=240,y=200)
+    i2 =Label(root, text="", image=image_b,bg="#181818").place(x=270, y=200)
+    i3 = Label(root, text="", image=image_b,bg="#181818").place(x=300, y=200)
+    i4 = Label(root, text="", image=image_b,bg="#181818").place(x=330, y=200)
     root.update_idletasks()
     time.sleep(0.5)
 
-    i1 = Label(root, text="", image=image_b, bg="#181818").place(x=240, y=160)
-    i2 = Label(root, text="", image=image_a, bg="#181818").place(x=270, y=160)
-    i3 = Label(root, text="", image=image_b, bg="#181818").place(x=300, y=160)
-    i4 = Label(root, text="", image=image_b, bg="#181818").place(x=330, y=160)
+    i1 = Label(root, text="", image=image_b, bg="#181818").place(x=240, y=200)
+    i2 = Label(root, text="", image=image_a, bg="#181818").place(x=270, y=200)
+    i3 = Label(root, text="", image=image_b, bg="#181818").place(x=300, y=200)
+    i4 = Label(root, text="", image=image_b, bg="#181818").place(x=330, y=200)
     root.update_idletasks()
     time.sleep(0.5)
 
-    i1 = Label(root, text="", image=image_b, bg="#181818").place(x=240, y=160)
-    i2 = Label(root, text="", image=image_b, bg="#181818").place(x=270, y=160)
-    i3 = Label(root, text="", image=image_a, bg="#181818").place(x=300, y=160)
-    i4 = Label(root, text="", image=image_b, bg="#181818").place(x=330, y=160)
+    i1 = Label(root, text="", image=image_b, bg="#181818").place(x=240, y=200)
+    i2 = Label(root, text="", image=image_b, bg="#181818").place(x=270, y=200)
+    i3 = Label(root, text="", image=image_a, bg="#181818").place(x=300, y=200)
+    i4 = Label(root, text="", image=image_b, bg="#181818").place(x=330, y=200)
     root.update_idletasks()
     time.sleep(0.5)
 
-    i1 = Label(root, text="", image=image_b, bg="#181818").place(x=240, y=160)
-    i2 = Label(root, text="", image=image_b, bg="#181818").place(x=270, y=160)
-    i3 = Label(root, text="", image=image_b, bg="#181818").place(x=300, y=160)
-    i4 = Label(root, text="", image=image_a, bg="#181818").place(x=330, y=160)
+    i1 = Label(root, text="", image=image_b, bg="#181818").place(x=240, y=200)
+    i2 = Label(root, text="", image=image_b, bg="#181818").place(x=270, y=200)
+    i3 = Label(root, text="", image=image_b, bg="#181818").place(x=300, y=200)
+    i4 = Label(root, text="", image=image_a, bg="#181818").place(x=330, y=200)
     root.update_idletasks()
     time.sleep(0.5)
 

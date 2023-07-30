@@ -4,6 +4,7 @@ from customtkinter import *
 from PIL import Image, ImageTk
 
 root = CTk()
+root.title("i-Mage")
 width = 900
 height = 600
 x = (root.winfo_screenwidth() / 2) - (width / 2)

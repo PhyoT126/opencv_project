@@ -9,10 +9,7 @@ from PIL import Image,ImageTk
 
 
 
-def checkState():
-    Click_home = CTkButton(sideFrame, text="Black and white     ", bg_color="transparent",
-                     fg_color="#00A36C", corner_radius=32,command=checkState)
-    Click_home.place(x=12, y=80)
+
 def addImage():
 
 
@@ -99,7 +96,7 @@ images=CTkButton(sideFrame,text="Image-to-Text   ",font=("Poppins",14),hover_col
 images.place(x=12,y=130)
 
 
-setting=CTkButton(sideFrame,text="Brightness            ",font=("Poppins",14),hover_color="#00A36C",bg_color="transparent",fg_color="transparent",corner_radius=32)
+setting=CTkButton(sideFrame,text="Brightness            ",font=("Poppins",14),hover_color="#00A36C", bg_color="transparent",fg_color="transparent",corner_radius=32)
 setting.place(x=12,y=180)
 
 logout=CTkButton(sideFrame,text="Effect                  ",font=("Poppins",14),hover_color="#00A36C",bg_color="transparent",fg_color="transparent",corner_radius=32)
