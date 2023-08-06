@@ -33,7 +33,7 @@ subHeader.place(x=50,y=88)
 
 
 
-startButton = CTkButton(master=w_Frame, text="Get Started", fg_color="#00A36C", width=160, height=50,
+startButton = CTkButton(master=w_Frame, text="Get Started", fg_color="#00BB6D", width=160, height=50,
                         font=("Poppins", 16), hover_color="#00A36C")
 startButton.place(x=170, y=166)
 
