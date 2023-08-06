@@ -9,7 +9,7 @@ from MainPage import main
 
 root=Tk()
 root.title("i-Mage")
-root.iconbitmap("favicon.ico")
+root.iconbitmap("Image/favicon.ico")
 root.configure(bg="#181818")
 width=600
 height=400
@@ -24,7 +24,7 @@ def new_win():
 
     root = CTk()
     root.title("i-Mage")
-    root.iconbitmap("favicon.ico")
+    root.iconbitmap("Image/favicon.ico")
     width = 900
     height = 600
     x = (root.winfo_screenwidth() / 2) - (width / 2)
@@ -32,10 +32,10 @@ def new_win():
     root.geometry(f"{width}x{height}+{int(x)}+{int(y)}")
     root.resizable(width=FALSE, height=FALSE)
 
-    backImage = CTkImage(Image.open("landing_bg.png"), size=(900, 600))
+    backImage = CTkImage(Image.open("Image/landing_bg.png"), size=(900, 600))
     main_Canva = CTkLabel(root, image=backImage, text="")
     main_Canva.pack()
-    brand = CTkImage(Image.open("i-logo.png"), size=(190, 78))
+    brand = CTkImage(Image.open("Image/i-logo.png"), size=(190, 78))
 
     w_Frame = CTkFrame(master=main_Canva, width=500, height=350, bg_color="#2B2B2B", border_width=1,
                        border_color="#00A36C", corner_radius=12)
@@ -65,7 +65,7 @@ def new_win():
 
 
 Frame(root,width=800,height=600,bg="#181818").place(x=0,y=0)
-brand=CTkImage(Image.open("i-logo.png"),size=(350,130))
+brand=CTkImage(Image.open("Image/i-logo.png"), size=(350, 130))
 logo=CTkLabel(master=root,image=brand,text="")
 logo.place(x=126,y=80)
 
@@ -73,8 +73,8 @@ logo.place(x=126,y=80)
 loading=Label(master=root,text="loading...",bg='#181818',fg="white",font=("Poppins", 16))
 loading.place(x=20,y=350)
 
-image_a=ImageTk.PhotoImage(Image.open("c1.png"),size=(70,70))
-image_b=ImageTk.PhotoImage(Image.open("c2.png"),size=(70,70))
+image_a=ImageTk.PhotoImage(Image.open("Image/c1.png"), size=(70, 70))
+image_b=ImageTk.PhotoImage(Image.open("Image/c2.png"), size=(70, 70))
 
 # for i in range(2):
 #     i1=Label(bg,text="",image=image_a,bg="#181818").place(x=240,y=200)

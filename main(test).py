@@ -38,8 +38,8 @@ def main():
     imageFrame = CTkFrame(root, width=800, height=470, bg_color="#121212",border_width=1,border_color="#00A36C")
     imageFrame.place(x=450, y=80)
 
-    uploadPhoto = CTkImage(Image.open("upload.png"), size=(30, 30))
-    downloadPhoto = CTkImage(Image.open("download.png"), size=(28, 28))
+    uploadPhoto = CTkImage(Image.open("Image/upload.png"), size=(30, 30))
+    downloadPhoto = CTkImage(Image.open("Image/download.png"), size=(28, 28))
 
     # addPhoto=CTkButton(image_label,text="Browse Image",image=editPhoto,compound="right",anchor="end", fg_color="#00A36C")
     # addPhoto.place(x=55,y=32)

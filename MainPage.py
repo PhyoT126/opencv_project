@@ -15,7 +15,7 @@ from PIL import Image,ImageTk
 def main():
     root = CTk()
     root.title("I-mage")
-    root.iconbitmap("favicon.ico")
+    root.iconbitmap("Image/favicon.ico")
     root.geometry("{}x{}+0+0".format(root.winfo_screenwidth(), root.winfo_screenheight()))
 
     # customtkinter.set_appearance_mode("System")
@@ -47,7 +47,7 @@ def main():
     resultFrame = CTkFrame(root, width=680, height=470, bg_color="#121212", border_width=1, border_color="#00BB6D")
     resultFrame.place(x=800, y=120)
 
-    arrow = CTkImage(Image.open("arrow_right.png"), size=(40, 40))
+    arrow = CTkImage(Image.open("Image/arrow_right.png"), size=(40, 40))
     arrow_label = CTkLabel(root, image=arrow, text="",bg_color="transparent")
     arrow_label.place(x=740, y=350)
 
@@ -55,11 +55,11 @@ def main():
 
 
 
-    uploadPhoto = CTkImage(Image.open("upload.png"), size=(30, 30))
-    downloadPhoto = CTkImage(Image.open("download.png"), size=(28, 28))
-    logo=CTkImage(Image.open("i-logo.png"),size=(140,60))
+    uploadPhoto = CTkImage(Image.open("Image/upload.png"), size=(30, 30))
+    downloadPhoto = CTkImage(Image.open("Image/download.png"), size=(28, 28))
+    logo=CTkImage(Image.open("Image/i-logo.png"), size=(140, 60))
 
-    smile=CTkImage(Image.open("smile.png"),size=(20,20))
+    smile=CTkImage(Image.open("Image/smile.png"), size=(20, 20))
 
     # addPhoto=CTkButton(image_label,text="Browse Image",image=editPhoto,compound="right",anchor="end", fg_color="#00A36C")
     # addPhoto.place(x=55,y=32)
@@ -71,7 +71,7 @@ def main():
     result_label = CTkLabel(resultFrame, text="", width=600, height=400)
     result_label.place(x=38, y=32)
 
-    smile = CTkImage(Image.open("smile.png"), size=(20, 20))
+    smile = CTkImage(Image.open("Image/smile.png"), size=(20, 20))
     resultText = CTkLabel(result_label, text="Result  ", image=smile, compound="right", font=("Poppins", 16),
                           text_color="#EDEADE")
     resultText.place(x=270, y=200)
@@ -138,9 +138,9 @@ def main():
                        hover_color="null", corner_radius=32)
     blur.place(x=930, y=45)
 
-    link=CTkImage(Image.open("link.png"),size=(20,20))
+    link=CTkImage(Image.open("Image/link.png"), size=(20, 20))
     scanner = CTkButton(root, text="Document Scanner", font=("Poppins", 14),
-                     fg_color="#00BB6D",image=link,compound="left",
+                     fg_color="#00BB6D",image=link,compound="left",height=35,
                      hover_color="null", corner_radius=32)
     scanner.place(x=1280, y=45)
 

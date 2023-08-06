@@ -12,7 +12,7 @@ y = (root.winfo_screenheight() / 2) - (height / 2)
 root.geometry(f"{width}x{height}+{int(x)}+{int(y)}")
 root.resizable(width=FALSE, height=FALSE)
 
-backImage = CTkImage(Image.open("landing_bg.png"), size=(900, 600))
+backImage = CTkImage(Image.open("Image/landing_bg.png"), size=(900, 600))
 main_Canva = CTkLabel(root, image=backImage, text="")
 main_Canva.pack()
 
